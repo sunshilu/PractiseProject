@@ -7,9 +7,9 @@ public class SortModule {
 	static int temp = 0;
 
 	public static void main(String[] args) {
-//		bubbleSort();
+		bubbleSort();
 //		selectionSort();
-		InsertionSort();
+//		InsertionSort();
 	}
 
 //	冒泡排序
@@ -23,6 +23,7 @@ public class SortModule {
 		Boolean flag;
 		int f = arr.length - 1;
 		int n = 0;
+		int k=0;
 		for (int i = 0; i < arr.length - 1; i++) {
 			flag = false;
 			n = f;
@@ -33,6 +34,7 @@ public class SortModule {
 					arr[j + 1] = temp;
 					flag = true;
 					f = j;
+					k++;
 				}
 			}
 			if (flag == false) {
@@ -40,6 +42,7 @@ public class SortModule {
 			}
 		}
 		System.out.println(Arrays.toString(arr));
+		System.out.println("sortModule"+k);
 	}
 
 //	选择排序（表现最稳定的算法之一）
