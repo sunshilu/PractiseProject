@@ -197,3 +197,4 @@ Icon
 !wrapper/*.jar
 
 !**/wrapper/*.jar
+/bin/
