@@ -58,6 +58,8 @@ public class practiseSort {
 			if (n == 0) {// 位置没有变化说明已经交换好了,跳出循环
 				break;
 			}
+			System.out.println(Arrays.toString(is));
+			System.out.println(n);
 		}
 		System.out.println(Arrays.toString(is));
 //		System.out.println(k);
